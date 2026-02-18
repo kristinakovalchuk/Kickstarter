@@ -1,0 +1,15 @@
+.icon{
+  display: flex;
+  width: 32px;
+  height: 32px;
+
+  background-repeat: no-repeat;
+
+  &--menu{
+    background-image: url('../images/icon/Icon-Burger-menu\ \(1\).svg');
+
+    @include on-desktop{
+      display: none;
+    }
+  }
+}
