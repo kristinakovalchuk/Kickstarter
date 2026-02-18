@@ -34,13 +34,20 @@
       text-decoration: none;
       color: $light-gray-color;
 
+      font-family: 'Helvetica Neue',sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+
       &--active{
+        font-weight: 400;
         color: $main-text-color;
       }
     }
 
     &__separator{
       color: $main-text-color;
+      margin-inline: 3px 4px;
     }
   }
 

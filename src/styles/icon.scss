@@ -12,4 +12,10 @@
       display: none;
     }
   }
+
+  &--close{
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/icon/Icon-Close\ \(1\).svg');
+  }
 }
