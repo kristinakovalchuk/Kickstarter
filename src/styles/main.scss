@@ -5,6 +5,11 @@
 @import './icon';
 @import './top-bar';
 @import './menu';
+@import './our-story';
+@import './about_us';
+@import './features';
+@import './get_in_touch';
+@import './footer';
 
 body {
   margin: 0;
@@ -13,7 +18,29 @@ body {
   margin-inline: auto;
 }
 
+html{
+  scroll-behavior: smooth
+}
+
 
 .container{
   @include padding-inline;
+}
+
+
+.main__content{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 110px;
+  gap: 110px;
+
+  @include on-tablet{
+    gap: 140px;
+    margin-bottom: 140px;
+  }
+
+  @include on-desktop {
+    gap: 170px;
+    margin-bottom: 170px;
+  }
 }
