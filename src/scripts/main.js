@@ -50,23 +50,25 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const langLinks = document.querySelectorAll('.top-bar__lang-switcher__link');
+document.addEventListener("DOMContentLoaded", function () {
+  const langLinks = document.querySelectorAll('.top-bar__lang-switcher__link');
 
-langLinks.forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
+  langLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
 
-    langLinks.forEach(l => l.classList.remove('top-bar__lang-switcher__link--active'));
-    link.classList.add('top-bar__lang-switcher__link--active');
+      langLinks.forEach(l => l.classList.remove('top-bar__lang-switcher__link--active'));
+      link.classList.add('top-bar__lang-switcher__link--active');
 
-    const lang = link.dataset.lang;
-    console.log('Selected language:', lang);
+      const lang = link.dataset.lang;
+      console.log('Selected language:', lang);
 
-    // тут пізніше:
-    // setLanguage(lang)
-    // localStorage.setItem('lang', lang)
+      // setLanguage(lang)
+      // localStorage.setItem('lang', lang)
+    });
   });
 });
+
 
 
 
