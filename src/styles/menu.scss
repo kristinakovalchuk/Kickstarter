@@ -1,4 +1,4 @@
-.menu{
+.menu {
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -17,13 +17,13 @@
   transition: all 0.5s;
   transform: translateX(-100%);
 
-  &:target{
+  &:target {
     opacity: 1;
     pointer-events: all;
     transform: translateX(0);
   }
 
-  @include on-desktop{
+  @include on-desktop {
     position: relative;
     justify-content: center;
     align-items: center;
@@ -38,9 +38,8 @@
     margin-block: 170px 62px;
   }
 
-  &__nav{
-
-    &__list{
+  &__nav {
+    &__list {
       display: flex;
       flex-direction: column;
       list-style: none;
@@ -48,18 +47,18 @@
       margin: 0;
       gap: 25px;
 
-      @include on-tablet{
+      @include on-tablet {
         gap: 40px;
       }
 
-      @include on-desktop{
+      @include on-desktop {
         display: flex;
         flex-direction: row;
         gap: 84px;
       }
     }
 
-    &__link{
+    &__link {
       text-decoration: none;
       font-family: Inter, sans-serif;
       font-weight: 400;
@@ -67,46 +66,45 @@
       line-height: 20px;
       color: $main-text-color;
 
-      &:hover{
+      &:hover {
         font-weight: 700;
       }
 
-      @include on-tablet{
+      @include on-tablet {
         font-size: 22px;
         line-height: 28px;
       }
 
-      @include on-desktop{
+      @include on-desktop {
         font-size: 14px;
         line-height: 20px;
       }
-
     }
   }
 
-  &__link{
+  &__link {
     display: flex;
     margin-block: 50.5px 162.5px;
   }
 
-  &__top-bar{
-    padding-block:  25px;
+  &__top-bar {
+    padding-block: 25px;
     margin-bottom: 31px;
 
-    @include on-tablet{
+    @include on-tablet {
       margin-bottom: 40px;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       display: none;
     }
   }
 
-  &__bottom{
+  &__bottom {
     display: flex;
     flex-direction: column;
 
-    @include on-tablet{
+    @include on-tablet {
       display: none;
     }
   }

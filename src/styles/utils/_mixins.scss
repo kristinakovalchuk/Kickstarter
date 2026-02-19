@@ -5,7 +5,6 @@
   }
 }
 
-
 @mixin on-tablet {
   @media (min-width: $tablet-min-width) {
     @content;
@@ -17,7 +16,6 @@
     @content;
   }
 }
-
 
 @mixin padding-inline {
   padding-inline: 30px;
@@ -50,4 +48,3 @@
     column-gap: 30px;
   }
 }
-

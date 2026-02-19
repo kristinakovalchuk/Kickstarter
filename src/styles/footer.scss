@@ -1,21 +1,21 @@
-.footer{
+.footer {
   margin-bottom: 20px;
 
-  @include on-tablet{
+  @include on-tablet {
     margin-bottom: 30px;
   }
 
-  &__top{
+  &__top {
     display: none;
     margin-bottom: 60px;
     width: 100%;
 
-    @include on-tablet{
+    @include on-tablet {
       @include page-grid;
     }
   }
 
-  &__logo{
+  &__logo {
     width: 161px;
     height: 26px;
     grid-column: 4/6;
@@ -23,28 +23,28 @@
 
     @include hover(transform, scale(1.1));
 
-    @include on-desktop{
+    @include on-desktop {
       grid-column: 6/8;
     }
   }
 
-  &__icons{
+  &__icons {
     display: flex;
     gap: 40px;
     justify-content: center;
     margin: 0 0 30px;
 
-    @include on-tablet{
+    @include on-tablet {
       margin: 0 0 60px;
     }
   }
 
-  &__text{
+  &__text {
     font-family: Inter, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     text-align: center;
-    color: #BDBDBD;
+    color: #bdbdbd;
   }
 }

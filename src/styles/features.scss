@@ -1,6 +1,5 @@
-.features{
-
-  &__title{
+.features {
+  &__title {
     font-family: Inter, sans-serif;
     font-weight: 700;
     font-size: 30px;
@@ -9,17 +8,17 @@
     color: $main-text-color;
     margin: 0 0 32px;
 
-    @include on-tablet{
+    @include on-tablet {
       margin: 0 0 30px;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       font-size: 56px;
       line-height: 70px;
     }
   }
 
-  &__img{
+  &__img {
     display: flex;
     background-image: url('../images/fetures/26c019c738ec68ad3dc880e586e67c94816ab87c-removebg-preview.png');
     background-repeat: no-repeat;
@@ -32,43 +31,42 @@
     max-width: 600px;
     min-height: 200px;
 
-    @include on-tablet{
+    @include on-tablet {
       min-height: 250px;
       grid-column: 4/-1;
       bottom: 0;
-      margin-top: -100px
+      margin-top: -100px;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       grid-column: 7/-1;
       height: 302px;
-      margin-top: -300px
+      margin-top: -300px;
     }
-
   }
 
-  &__wrapper{
+  &__wrapper {
     @include page-grid;
 
     position: relative;
     margin-inline: 30px;
 
-    @include on-tablet{
+    @include on-tablet {
       margin-inline: 0;
     }
   }
 
-  &__content{
+  &__content {
     padding-top: 30px;
     background-color: $bg-features-color;
     margin-inline: -30px;
 
-    @include on-tablet{
+    @include on-tablet {
       margin-inline: 0;
       padding: 60px 0 0;
     }
 
-    &__title{
+    &__title {
       font-family: Inter, sans-serif;
       font-weight: 700;
       font-size: 18px;
@@ -79,7 +77,7 @@
 
       @include hover(transform, scale(1.05));
 
-      @include on-tablet{
+      @include on-tablet {
         margin: 0 0 30px;
         font-size: 34px;
         line-height: 42px;
@@ -87,25 +85,25 @@
     }
   }
 
-  &__slyder{
+  &__slyder {
     position: relative;
     overflow: hidden;
     margin-inline: auto;
     grid-column: 1 /-1;
 
-    @include on-tablet{
+    @include on-tablet {
       margin-inline: 0;
       grid-column: 2/-1;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       grid-column: 1/-1;
 
       @include page-grid;
     }
   }
 
-  &__list{
+  &__list {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -114,20 +112,20 @@
     margin-bottom: 50px;
     height: 176px;
 
-    &-first{
+    &-first {
       grid-column: 2/6;
     }
 
-    &-second{
+    &-second {
       grid-column: 7/-1;
     }
 
-    &-third{
+    &-third {
       grid-column: 2/6;
     }
   }
 
-  &__item{
+  &__item {
     display: inline-block;
     font-family: Inter, sans-serif;
     font-weight: 400;
@@ -138,7 +136,7 @@
     @include hover(transform, scale(1.05));
   }
 
-  &__button{
+  &__button {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -146,20 +144,20 @@
     margin-inline: auto;
     grid-column: 1 /-1;
 
-    @include on-tablet{
+    @include on-tablet {
       grid-column: 2/-1;
       margin-inline: 0;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       display: none;
     }
 
-    &__switch{
+    &__switch {
       display: flex;
     }
 
-    &__number{
+    &__number {
       display: flex;
       align-items: center;
       text-align: center;
@@ -171,21 +169,21 @@
       font-weight: 400;
       font-size: 11px;
       line-height: 1;
-      transition: all  0.3s;
+      transition: all 0.3s;
       transform: translateY(0);
 
-      &__number{
+      &__number {
         margin: 0;
 
-        &--active{
-          font-size: 16px;;
+        &--active {
+          font-size: 16px;
           line-height: 24px;
           color: $main-text-color;
           transform: translateY(-20%);
         }
       }
 
-      &__line{
+      &__line {
         margin: 0;
       }
     }
@@ -197,7 +195,7 @@
 .features__list-third {
   display: none;
 
-  @include on-desktop{
+  @include on-desktop {
     display: flex;
     flex-direction: column;
   }

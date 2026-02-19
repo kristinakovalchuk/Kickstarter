@@ -1,10 +1,9 @@
-.get_in_touch{
-
-  &__content{
+.get_in_touch {
+  &__content {
     @include page-grid;
   }
 
-  &__title{
+  &__title {
     font-family: Inter, sans-serif;
     font-weight: 700;
     font-size: 30px;
@@ -17,35 +16,35 @@
 
     @include hover(transform, scale(1.05));
 
-    @include on-tablet{
+    @include on-tablet {
       grid-column: 1 / 5;
       font-size: 36px;
       line-height: 46px;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       grid-column: 1 / 7;
       font-size: 56px;
       line-height: 70px;
     }
   }
 
-  &__input{
+  &__input {
     display: flex;
     flex-direction: column;
     width: 100%;
 
     grid-column: 1 / -1;
 
-    @include on-tablet{
+    @include on-tablet {
       grid-column: 5 / -1;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       grid-column: 7 / -1;
     }
 
-    &-email{
+    &-email {
       box-sizing: border-box;
       background-color: $c-gray;
       padding: 12px 20px;
@@ -60,16 +59,16 @@
       margin-bottom: 20px;
       outline: none;
 
-      &::placeholder{
-        color: #BDBDBD;
+      &::placeholder {
+        color: #bdbdbd;
       }
 
-      &:hover{
+      &:hover {
         border: 1px solid $green-color;
       }
     }
 
-    &-massage{
+    &-massage {
       box-sizing: border-box;
       background-color: $c-gray;
       padding: 12px 20px;
@@ -87,19 +86,19 @@
       outline: none;
       color: $main-text-color;
 
-      &::placeholder{
-        color: #BDBDBD;
+      &::placeholder {
+        color: #bdbdbd;
       }
 
-      &:hover{
+      &:hover {
         border: 1px solid $green-color;
       }
     }
 
-    &__button{
+    &__button {
       width: 102px;
       height: 40px;
-      background-color: #0DB2B3;
+      background-color: #0db2b3;
       color: #fff;
       align-items: center;
       justify-content: center;
@@ -107,7 +106,7 @@
       transition: all 0.3s;
       cursor: pointer;
 
-      &:hover{
+      &:hover {
         background-color: $green-color;
       }
     }

@@ -1,11 +1,10 @@
-.about_us{
-
-  &__content{
+.about_us {
+  &__content {
     display: flex;
     flex-direction: column;
     gap: 110px;
 
-    @include on-tablet{
+    @include on-tablet {
       gap: 140px;
     }
 
@@ -29,7 +28,7 @@
   &__right {
     grid-column: 1 / -1;
 
-    @include on-tablet{
+    @include on-tablet {
       grid-column: 5 / -1;
     }
 
@@ -38,29 +37,29 @@
     }
   }
 
-  &__card{
+  &__card {
     @include page-grid;
 
     align-items: start;
 
-    &__img{
+    &__img {
       width: 100%;
       height: auto;
       margin-block: 20px;
       object-fit: cover;
 
-      @include on-tablet{
+      @include on-tablet {
         margin: 0;
         height: 415px;
         grid-row: 1/4;
       }
 
-      @include on-desktop{
+      @include on-desktop {
         height: 388px;
       }
     }
 
-    &__title{
+    &__title {
       align-self: start;
       font-family: Inter, sans-serif;
       font-weight: 700;
@@ -73,18 +72,18 @@
 
       @include hover(transform, scale(1.05));
 
-      @include on-tablet{
+      @include on-tablet {
         font-size: 36px;
         line-height: 46px;
       }
 
-      @include on-desktop{
+      @include on-desktop {
         font-size: 56px;
         line-height: 1.25;
       }
     }
 
-    &__description{
+    &__description {
       font-family: Inter, sans-serif;
       font-weight: 400;
       font-size: 16px;
@@ -94,13 +93,13 @@
 
       @include hover(transform, scale(1.05));
 
-      @include on-tablet{
+      @include on-tablet {
         margin: 30px 0 60px;
       }
     }
 
-    &__link{
-      color: #0DB2B3;
+    &__link {
+      color: #0db2b3;
       font-family: Inter, sans-serif;
       font-weight: 700;
       font-size: 12px;
@@ -111,11 +110,11 @@
       width: 127px;
 
       &::after {
-        content: "";
+        content: '';
         display: block;
         width: 53px;
         height: 2px;
-        background-color: #0DB2B3;
+        background-color: #0db2b3;
         margin-top: 5px;
         transition: width 0.3s;
       }
@@ -124,24 +123,24 @@
         width: 128px;
       }
 
-      @include on-desktop{
+      @include on-desktop {
         margin-bottom: 68px;
       }
 
-      @include on-desktop{
+      @include on-desktop {
         margin-bottom: 48px;
       }
     }
   }
 
-  &__coment{
+  &__coment {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-inline: auto;
     margin-bottom: 110px;
 
-    @include on-tablet{
+    @include on-tablet {
       margin-bottom: 140px;
     }
 
@@ -149,7 +148,7 @@
       margin-bottom: 170px;
     }
 
-    &__description{
+    &__description {
       font-family: Inter, sans-serif;
       font-weight: 700;
       font-size: 14px;
@@ -161,37 +160,37 @@
 
       @include hover(transform, scale(1.05));
 
-      @include on-tablet{
+      @include on-tablet {
         font-size: 24px;
         line-height: 36px;
         max-width: 786px;
         padding-top: 60px;
       }
 
-      @include on-desktop{
+      @include on-desktop {
         padding-top: 42px;
       }
     }
 
-    &__bg-img{
+    &__bg-img {
       z-index: -3;
       position: absolute;
       width: 208px;
       height: 171px;
       object-fit: contain;
 
-      @include on-tablet{
+      @include on-tablet {
         width: 233px;
         height: 189px;
       }
 
-      @include on-desktop{
+      @include on-desktop {
         width: 233px;
         height: 192px;
       }
     }
 
-    &__people-img{
+    &__people-img {
       height: 62px;
       width: 62px;
       border-radius: 50px;
@@ -200,16 +199,16 @@
 
       @include hover(transform, scale(1.1));
 
-      @include on-tablet{
+      @include on-tablet {
         margin-block: 40px 20px;
       }
 
-      @include on-desktop{
+      @include on-desktop {
         margin-block: 30px 20px;
       }
     }
 
-    &__name{
+    &__name {
       font-family: Inter, sans-serif;
       font-weight: 700;
       font-size: 16px;
@@ -219,7 +218,7 @@
       margin: 0 0 5px;
     }
 
-    &__position{
+    &__position {
       font-family: Inter, sans-serif;
       font-weight: 400;
       font-size: 14px;

@@ -18,23 +18,21 @@ body {
   margin-inline: auto;
 }
 
-html{
-  scroll-behavior: smooth
+html {
+  scroll-behavior: smooth;
 }
 
-
-.container{
+.container {
   @include padding-inline;
 }
 
-
-.main__content{
+.main__content {
   display: flex;
   flex-direction: column;
   margin-bottom: 110px;
   gap: 110px;
 
-  @include on-tablet{
+  @include on-tablet {
     gap: 140px;
     margin-bottom: 140px;
   }
