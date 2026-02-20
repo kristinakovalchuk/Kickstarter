@@ -6,11 +6,11 @@
   }
 
   &__content {
-    @include page-grid;
-
     align-items: start;
     row-gap: 65px;
     margin-bottom: 110px;
+
+    @include page-grid;
 
     @include on-tablet {
       margin-bottom: 140px;

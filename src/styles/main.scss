@@ -16,6 +16,10 @@ body {
   background: $c-gray;
   max-width: 1440px;
   margin-inline: auto;
+
+  &:has(.menu:target) {
+    overflow: hidden;
+  }
 }
 
 html {

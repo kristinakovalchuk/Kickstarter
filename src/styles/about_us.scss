@@ -38,9 +38,9 @@
   }
 
   &__card {
-    @include page-grid;
-
     align-items: start;
+
+    @include page-grid;
 
     &__img {
       width: 100%;

@@ -1,4 +1,5 @@
 'use strict';
+
 document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(
     ".features__list-first, .features__list-second, .features__list-third"
