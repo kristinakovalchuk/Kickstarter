@@ -1,5 +1,6 @@
 .header {
   margin-bottom: 110px;
+  overflow: hidden;
 
   @include on-tablet {
     margin-bottom: 140px;
@@ -41,8 +42,7 @@
 
     margin-inline: -30px;
     left: 70%;
-    transform: translateX(-50%);
-
+    transform: translateX(-55%);
 
     @include on-tablet {
       left: 0;
