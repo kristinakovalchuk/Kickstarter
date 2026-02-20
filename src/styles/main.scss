@@ -16,6 +16,7 @@ body {
   background: $c-gray;
   max-width: 1440px;
   margin-inline: auto;
+  overflow-x: hidden;
 
   &:has(.menu:target) {
     overflow: hidden;
